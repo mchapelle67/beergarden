@@ -3,46 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Beergarden - Page d'accueil</title>
 </head>
 <body>
-    <header>
-        <figure class="logo">
-            <img src="img/logo-light.png" alt="Logo REVOLVER">
-        </figure>
-        <nav>
-            <a href="">HOME</a>
-            <a href="">TRADITION</a>
-            <a href="">SERVICES</a>
-            <a href="">MENU</a>
-            <a href="">CONTACT</a>
-        </nav>
-        <div class="social_media">
-            <a href=""><i class="fa-brands fa-x-twitter"></a></i>
-            <a href=""><i class="fa-brands fa-facebook"></a></i>
-            <a href=""><i class="fa-brands fa-instagram"></a></i>
+    <header>    
+        <div class="navigateur">
+            <figure class="logo">
+                <img src="img/logo-light.png" alt="Logo REVOLVER">
+            </figure>
+            <nav>
+                <a href="">HOME</a>
+                <a href="">TRADITION</a>
+                <a href="">SERVICES</a>
+                <a href="">MENU</a>
+                <a href="">CONTACT</a>
+            </nav>
+            <div class="social_media">
+                <a href=""><i class="fa-brands fa-x-twitter"></a></i>
+                <a href=""><i class="fa-brands fa-facebook"></a></i>
+                <a href=""><i class="fa-brands fa-instagram"></a></i>
+            </div>
         </div>                 
-        <figure>
+        <figure class="illustration">
             <img src="img/back2.png" alt="Illustration d'un tonneau sur la photo en arrière plan avec écrit BeerGarden">
         </figure> 
-        <figure>
+        <figure class="back">
             <img src="img/back1.jpg" alt="Photo du bar en arrière-plan du site">
         </figure>
     </header>
     <main>  
         <section class="bandeau_citation">
             <blockquote>
-            LOVE AND MAGIC HAVE A GREAT DEAL IN COMMON. THEY ENRICH THE SOUL, 
-            DELIGHT THE HEARTH. AND THEY BOTH TAKE PRACTICE
+            "LOVE AND MAGIC HAVE A GREAT DEAL IN COMMON. THEY ENRICH<br> THE SOUL, 
+            DELIGHT THE HEARTH. AND THEY BOTH TAKE PRACTICE."
             </blockquote>
         </section>
         <section class="traditions">
-            <article>
+            <article class="beer_tradition">
                 <h1>BEER TRADITION</h1>
                     <h2>Tons of shortcodes provide countless options</h2>
                         <p>
@@ -54,21 +56,23 @@
                         </p>
                     <a href=""><input type="button" value="READ MORE"></a>
             </article>
-            <div>
-                <figure>
+            <div class="image-container">
+                <figure class="image_back1">
                     <img src="img/back3.jpg" alt="Photo floutée du bar en arrière-plan du site">
                 </figure>
-                <figure>
+                <figure class="illustration_tonneau">
                     <img src="img/back4.png" alt="Illustration d'un tonneau de bière avec dessus des écritures">
             </figure>
             </div>
-            <div>
+            <div class="image-container2">
                 <figure>
                     <img src="img/back5.jpg" alt="Photo de la salle du bar">
+                </figure>
+                <figure class="illustration_biere">
                     <img src="img/back6.png" alt="Illustration d'une bière avec des écriture dessus">
                 </figure>
             </div>
-            <article>
+            <article class="pub_story">
                 <h2>PUB STORY</h2>
                     <h3>Tons of shortcodes provide countless options</h3>
                         <p>
@@ -86,13 +90,13 @@
                 <img src="img/galerie1.jpg" alt="Photos de groupe de personne buvant une bière au bar">
             </figure>
             <figure>
-            <img src="img/galerie2.jpg" alt="Photo d'un groupe de personne trinquant avec des bières">
+                <img src="img/galerie2.jpg" alt="Photo d'un groupe de personne trinquant avec des bières">
             </figure>
-            <figure>
+                <figure>
             <img src="img/galerie3.jpg" alt="Photo du bar">
-            </figure>
+                </figure>
             <figure>
-            <img src="img/galerie4.jpg" alt="Photo d'un groupe de personne dejeunant avec une bière">
+                <img src="img/galerie4.jpg" alt="Photo d'un groupe de personne dejeunant avec une bière">
             </figure>
         </section>
         <section class="services">
@@ -138,10 +142,12 @@
             </div>
         </section>
         <section class="effet_parallaxe">
-            <h2>THIS IS OUR OFFER</h2>
-            <p>
-                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."   
-            </p>
+            <div class="parallaxe">
+                <h2>THIS IS OUR OFFER</h2>
+                <p>
+                    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."   
+                </p>
+            </div>
         </section>
         <section class="google_maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2256.06623740182!2d7.302177807299356!3d47.74401247085816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47919b30ab66971b%3A0xb4c483ea30f485d7!2s10%20Rue%20du%20Panorama%2C%2068200%20Mulhouse!5e0!3m2!1sfr!2sfr!4v1742810479876!5m2!1sfr!2sfr" 
