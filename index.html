@@ -10,19 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Beergarden - Page d'accueil</title>
 </head>
+
 <body>
+    <id class="container">
     <header>    
         <div class="navigateur">
             <figure class="logo">
                 <img src="img/logo-light.png" alt="Logo REVOLVER">
             </figure>
-            <nav>
-                <a href="">HOME</a>
-                <a href="">TRADITION</a>
-                <a href="">SERVICES</a>
-                <a href="">MENU</a>
-                <a href="">CONTACT</a>
-            </nav>
+
+            <!-- MENU BURGER -->
+            <nav class="nav-menu">
+                <button class="burger-menu" aria-label="Menu">&#9776;</button>
+                    <ul class="menu">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">TRADITION</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">MENU</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </nav>
             <div class="social_media">
                 <a href=""><i class="fa-brands fa-x-twitter"></a></i>
                 <a href=""><i class="fa-brands fa-facebook"></a></i>
@@ -36,6 +43,7 @@
             <img src="img/back1.jpg" alt="Photo du bar en arrière-plan du site">
         </figure>
     </header>
+
     <main>  
         <section class="bandeau_citation">
             <blockquote>
@@ -43,6 +51,7 @@
             DELIGHT THE HEARTH. AND THEY BOTH TAKE PRACTICE."
             </blockquote>
         </section>
+
         <section class="traditions">
             <article class="beer_tradition">
                 <h1>BEER TRADITION</h1>
@@ -56,7 +65,7 @@
                         </p>
                     <a href=""><input type="button" value="READ MORE"></a>
             </article>
-            <div class="image-container">
+            <div class="image_container">
                 <figure class="image_back1">
                     <img src="img/back3.jpg" alt="Photo floutée du bar en arrière-plan du site">
                 </figure>
@@ -85,20 +94,34 @@
                         <a href=""><input type="button" value="READ MORE"></a>
             </article>
         </section>
+
         <section class="galerie">
-            <figure>
-                <img src="img/galerie1.jpg" alt="Photos de groupe de personne buvant une bière au bar">
+            <figure class="photo">
+                <img src="img/galerie1.jpg" alt="Photos de groupe de personnes buvant une bière au bar">
+                <div class="overlay">
+                    <div class="plus">+</div>
+                </div>
             </figure>
-            <figure>
-                <img src="img/galerie2.jpg" alt="Photo d'un groupe de personne trinquant avec des bières">
+            <figure class="photo">
+                <img src="img/galerie2.jpg" alt="Photo d'un groupe de personnes trinquant avec des bières">
+                <div class="overlay">
+                    <div class="plus">+</div>
+                </div>
             </figure>
-                <figure>
-            <img src="img/galerie3.jpg" alt="Photo du bar">
-                </figure>
-            <figure>
-                <img src="img/galerie4.jpg" alt="Photo d'un groupe de personne dejeunant avec une bière">
+            <figure class="photo">
+                <img src="img/galerie3.jpg" alt="Photo du bar">
+                <div class="overlay">
+                    <div class="plus">+</div>
+                </div>
+            </figure>
+            <figure class="photo">
+                <img src="img/galerie4.jpg" alt="Photo d'un groupe de personnes déjeunant avec une bière">
+                <div class="overlay">
+                    <div class="plus">+</div>
+                </div>
             </figure>
         </section>
+    
         <section class="services">
             <div>
                 <figure>
@@ -112,7 +135,7 @@
             </div>
             <div>
                 <figure>
-                    <img src="img/h5-icon-2.png" alt="Logo d'un tonneau de bière">>
+                    <img src="img/h5-icon-2.png" alt="Logo d'un tonneau de bière">
                 </figure>
                 <h3>SECOND CHANCE</h3>
                 <p>
@@ -141,6 +164,7 @@
                 </p> 
             </div>
         </section>
+
         <section class="effet_parallaxe">
             <div class="parallaxe">
                 <h2>THIS IS OUR OFFER</h2>
@@ -149,9 +173,16 @@
                 </p>
             </div>
         </section>
+        
         <section class="google_maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2256.06623740182!2d7.302177807299356!3d47.74401247085816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47919b30ab66971b%3A0xb4c483ea30f485d7!2s10%20Rue%20du%20Panorama%2C%2068200%20Mulhouse!5e0!3m2!1sfr!2sfr!4v1742810479876!5m2!1sfr!2sfr" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
     </main>
     <footer>
@@ -159,5 +190,13 @@
             <img src="img/footer-logo.png" alt="Logo REVOLVER">
         </figure>
     </footer>
+    </id>
+<script>
+    document.querySelector(".burger-menu").addEventListener("click", function() {
+        document.querySelector(".menu").classList.toggle("open");
+    });
+</script>
 </body>
 </html>
+
+
