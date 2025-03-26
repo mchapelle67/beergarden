@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 img {
@@ -17,13 +16,6 @@ body {
   font-family: "Oswald", sans-serif;
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#container {
-  width: 100%;
-  max-width: 100%;
 }
 
 a {
@@ -41,8 +33,12 @@ a:hover {
 
 
 /* **************************************HEADER****************************************************** */
+header {
+  background-image: url(img/back1.jpg);
+  background-size: cover;
+}
+
 .navigateur {
-background-color: black;
 background: rgba(0, 0, 0, 0.7);
 display: flex;
 justify-content: space-between;
@@ -52,12 +48,11 @@ position: fixed;
 top: 0;
 left: 0;
 z-index: 1;
-width: 100%;
-box-sizing: border-box; 
+width: 100vw;
 }
 
 .logo img {
-width: 100px;
+width: 60%;
 height: auto;
 }
 
@@ -71,20 +66,12 @@ padding: 0 5px 0 5px;
 font-size: 15px;
 }
 
-.back img {
-position: absolute;
-top: 0;
-z-index: -1;
-width: 100%
-} 
-
 .illustration {
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-bottom: 20px;
-padding-top: 100px;
+padding: 100px 0 50px 0;
 overflow: hidden;
 width: 100%;
 }
@@ -98,7 +85,6 @@ background: none;
 border: none;
 cursor: pointer;
 }
-
 /* *****************************************MAIN************************************************************ */
 /* ************************************BANDEAU CITATION***************************************************** */
 .bandeau_citation {
@@ -111,7 +97,6 @@ align-content: center;
 justify-items: center;
 width: 100%;
 }
-
 /* *********************************************TRADITION**************************************************/
 .traditions {
 display: grid;
@@ -123,7 +108,6 @@ width: 100%;
 .traditions img {
 width: 100%;;
 }
-
 /* BLOCK 1 **************************************/
 .beer_tradition {
 justify-items: center;
@@ -158,36 +142,37 @@ border-radius: 5px;
 color: white;
 font-family: "oswald";
 font-size: 1em;
-margin-top: 30px;
+margin: 30px 0 30px 0;
 }
 
 /* BLOCK 2 ****************************** */
 .image_container {
 position: relative;
 width: 100%;
-
-}
-
-.image_back1 {
-position: absolute;
-width: 100%;
-height: 100%;
+background-image: url(img/back3.jpg);
+background-size: cover;
 }
 
 .illustration_tonneau {
 position: absolute;
-left: 20%;
+left: 30%;
 top: 2%;
+width: 50%;
 }
 
 /* BLOCK 3 ****************************************** */
 .image-container2 {
 position: relative;
+width: 100%;
+background-image: url(img/back5.jpg);
+background-size: cover;
 }
+
 .illustration_biere {
 position: absolute;
 top: 3%;
 left: 25%;
+width: 50%;
 }
 
 /* BLOCK 4 ****************************************** */
@@ -224,9 +209,8 @@ border-radius: 5px;
 color: white;
 font-family: "oswald";
 font-size: 1em;
-margin-top: 30px;
+margin: 30px 0 30px 0;
 }
-
 /* *******************************************GALERIE***************************************************** */
 .galerie {
 display: flex;
@@ -275,8 +259,6 @@ opacity: 1;
 .photo:hover .plus {
 transform: rotate(180deg); 
 }
-
-
 /* ********************************************SERVICES***************************************************** */
 .services {
 display: grid;
@@ -311,7 +293,6 @@ color: var(--jaune);
 /* .services div:hover figure img {
 mix-blend-mode: multiply;
 } */
-
 /* ************************************************PARALLAXE**************************************************** */
 .parallaxe {
 background-image: url(img/h5-parallax-img-2.jpg) ;
@@ -332,7 +313,6 @@ font-family:'Times New Roman', Times, serif;
 font-style: italic;
 font-size: 1.2em;
 }
-
 /* *********************************************GOOGLE MAP******************************************************* */
 .google_maps {
 position: relative;
@@ -344,7 +324,7 @@ overflow: hidden; /* Permet de cacher les débordements si nécessaire */
 /* Application d'un filtre plus intense pour rendre l'image plus sombre */
 .google_maps iframe {
 pointer-events: none; 
-  filter: grayscale(100%) invert(1);/* Noir et blanc, fort contraste et faible luminosité */
+filter: grayscale(100%) invert(1);/* Noir et blanc, fort contraste et faible luminosité */
 border: none;
 width: 100%;
 display: block;
@@ -373,82 +353,3 @@ background-color: black;
 padding: 30px;
 justify-content: center;
 }
-
-/* *************************************************RESPONSIVE DESIGN********************************************** */
-
-/* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-#container {
-  width: 100%;
-}
-/* HEADER */
-.navigateur {
-padding: 15px;
-}
-
-.burger-menu {
-display: block;
-position: absolute;
-top: 10px;
-right: 25px;
-}
-.menu {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 50px;
-  right: 10px;
-  background: black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  padding: 10px;
-}
-.menu.open {
-  display: flex;
-}
-
-.social_media {
-display: none;
-}
-
-.back img {
-position: absolute;
-/* top: 0; */
-/* z-index: -1; */
-width: 100%;
-} 
-
-.illustration {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-/* margin-bottom: 20px;
-padding-top: 100px; */
-overflow: hidden;
-width: 100%;
-}
-
-}
-
-
-
-
-/* Smartphones (landscape) */
-@media only screen and (min-width: 321px) {
-#container {
-  width: 100%;
-  font-size: 2.5em;
-}
-}
-
-
-/* Smartphones (portrait) */
-@media only screen and (max-width: 320px) {
-#container {
-  width: 100%;
-  font-size: 2em;
-}
-}
-
-
-/*DEGRADER ICONE SERVICES */
