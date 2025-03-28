@@ -89,13 +89,14 @@ cursor: pointer;
 /* ************************************BANDEAU CITATION***************************************************** */
 .bandeau_citation {
 background-color: var(--jaune);
-padding: 50px;
+padding: 60px;
 font-size: 3em;
 font-weight: 600;
 color: white;
 align-content: center;
 justify-items: center;
 width: 100%;
+line-height: 60px;
 }
 /* *********************************************TRADITION**************************************************/
 .traditions {
@@ -113,6 +114,8 @@ width: 100%;;
 justify-items: center;
 align-content: center;
 background-color: white;
+width: 100%;
+padding: 80px;
 }
 
 .beer_tradition h1 {
@@ -129,7 +132,7 @@ font-size: 1.2em;
 
 .beer_tradition p {
 font-family: "Raleway", sans-serif;
-padding: 0 100px 0 100px;
+padding: 0 25px 0 25px;
 line-height: 30px;
 text-align: center;
 }
@@ -156,7 +159,7 @@ background-size: cover;
 .illustration_tonneau {
 position: absolute;
 left: 30%;
-top: 2%;
+top: 5%;
 width: 50%;
 }
 
@@ -170,7 +173,7 @@ background-size: cover;
 
 .illustration_biere {
 position: absolute;
-top: 3%;
+top: 5%;
 left: 25%;
 width: 50%;
 }
@@ -214,11 +217,13 @@ margin: 30px 0 30px 0;
 /* *******************************************GALERIE***************************************************** */
 .galerie {
 display: flex;
+flex-wrap: wrap;
+width: 100%;
 }
 
 .photo {
 position: relative;
-width: 100%;
+width: 50%;
 }
 
 .photo img {
@@ -230,7 +235,7 @@ width: 100%;
 position: absolute;
 top: 0;
 left: 0;
-width: 100%;
+width: 50%;
 height: 100%;
 background: rgba(197,157,95,0.7); 
 display: flex;
@@ -240,7 +245,7 @@ opacity: 0;
 transition: opacity 0.5s ease-in-out;
 }
 
-/* Le "+" */
+/* Animation au survol */
 .plus {
 font-family:'Times New Roman', Times, serif;
 font-size: 80px;
@@ -250,12 +255,12 @@ transform: rotate(0deg);
 transition: transform 0.5s ease-in-out;
 }
 
-/* Effet au survol */
+/* Activation de l'effet au survol */
 .photo:hover .overlay {
 opacity: 1;
 }
 
-/* Le "+" tourne */
+/* Rotation de l'animation au survole */
 .photo:hover .plus {
 transform: rotate(180deg); 
 }

@@ -13,22 +13,26 @@
       top: 10px;
       right: 25px;
       color: white;
+  
     }
-    
     .menu {
       display: none;
       flex-direction: column;
       position: absolute;
       top: 50px;
       right: 10px;
-      background: black;
-      padding: 10px;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 50px;
+      width: 90%;
+      font-size: 1.5em;;
+      gap: 100px;
+      text-align: center;
     }
     .menu.open {
       display: flex;
     }
     .social_media {
-    display: none;
+      display: none;
     }
     .illustration img {
       width: 80%;
@@ -36,11 +40,12 @@
     
     /* BANDEAU CITATION */
     .bandeau_citation {
-      padding: 10px;
-      font-size: 0.8em;
+      padding: 15px;
+      font-size: 1.5em;
       font-weight: 400;
       color: white;
       text-align: center;
+      line-height: 30px;;
       }
     
     
@@ -51,6 +56,10 @@
       flex-direction: column;
       } 
       
+      .beer_tradition {
+        padding: 20px;
+      }
+
       .beer_tradition h1 {
       font-size: 3em;
       }
@@ -91,6 +100,10 @@
         }
     
       /* BLOCK 4 */
+      .pub_story {
+        padding: 20px;;
+      }
+
       .pub_story h2 {
         font-size: 3em;
         }
@@ -111,6 +124,12 @@
       }
     
     /* GALERIE */
+    .photo figure {
+      width: 50%;
+    }
+    .overlay {
+      width: 100%;
+    }
     .plus {
       font-size: 40px; 
     }
@@ -160,11 +179,12 @@
     
     /* BANDEAU CITATION */
     .bandeau_citation {
-      padding: 20px;
-      font-size: 1.2em;
+      padding: 25px;
+      font-size: 1.5em;
       font-weight: 400;
       color: white;
       text-align: center;
+      line-height: 30px;;
       }
     
     
@@ -175,6 +195,10 @@
       flex-direction: column;
       } 
       
+      .beer_tradition {
+        padding: 15px;
+      }
+
       .beer_tradition h1 {
       font-size: 3em;
       }
@@ -207,6 +231,10 @@
         }
     
       /* BLOCK 4 */
+      .pub_story {
+        padding: 15px;
+      }
+      
       .pub_story h2 {
         font-size: 3em;
         }
@@ -228,7 +256,10 @@
     
     /* GALERIE */
     .plus {
-      font-size: 40px; 
+      font-size: 100px; 
+    }
+    .overlay {
+      width: 100%;
     }
     
     /* SERVICES */
@@ -251,7 +282,7 @@
     
     /* PARALLAXE */
     .parallaxe {
-      padding:20px;
+      padding:40px;
       color: white;
       text-align: center;
       }
