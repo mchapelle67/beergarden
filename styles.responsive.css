@@ -124,15 +124,28 @@
       }
     
     /* GALERIE */
-    .photo figure {
-      width: 50%;
-    }
+  
     .overlay {
       width: 100%;
     }
     .plus {
-      font-size: 40px; 
+      font-size: 60px; 
     }
+    .galerie {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      }
+      
+      .photo {
+      position: relative;
+      width: 50%;
+      }
+      
+      .photo img {
+      width: 100%;
+    
+      }
     
     /* SERVICES */
     .services {
@@ -154,7 +167,7 @@
     
     /* PARALLAXE */
     .parallaxe {
-      padding:20px;
+      padding: 25px;
       color: white;
       text-align: center;
       }
@@ -256,7 +269,7 @@
     
     /* GALERIE */
     .plus {
-      font-size: 100px; 
+      font-size: 80px; 
     }
     .overlay {
       width: 100%;

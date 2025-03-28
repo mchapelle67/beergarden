@@ -223,7 +223,7 @@ width: 100%;
 
 .photo {
 position: relative;
-width: 50%;
+width: 25%;
 }
 
 .photo img {
@@ -235,7 +235,7 @@ width: 100%;
 position: absolute;
 top: 0;
 left: 0;
-width: 50%;
+width: 100%;
 height: 100%;
 background: rgba(197,157,95,0.7); 
 display: flex;
